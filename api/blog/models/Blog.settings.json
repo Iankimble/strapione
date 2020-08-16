@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blog",
+    "description": "blog posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}
